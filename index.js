@@ -6,10 +6,6 @@ const api = require("./api");
 
 const app = express();
 app.use("/api", api);
-// Firebase setup
-// admin.initializeApp({
-//   credential: admin.credential.applicationDefault(),
-// });
 
 app.get("/", (req, res) => {
   res.send("Welcome to mis.");
